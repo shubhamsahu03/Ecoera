@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EcoEra</string>
+    <string name="historical">HISTORICAL</string>
+    <string name="current">CURRENT</string>
+</resources>
