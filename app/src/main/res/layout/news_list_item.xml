@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/list_item_padding"
+    android:paddingLeft="@dimen/list_item_padding"
+    android:paddingRight="@dimen/list_item_padding"
+    android:paddingStart="@dimen/list_item_padding">
+
+    <!-- Image of news thumbnail -->
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/thumbnail_width"
+        android:layout_height="@dimen/thumbnail_height"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/image_description"
+        android:gravity="center"
+        android:src="@drawable/noimage" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/linear_layout_left"
+        android:layout_marginStart="@dimen/linear_layout_start"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Text with section name -->
+        <TextView
+            android:id="@+id/section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:textAllCaps="false"
+            android:textSize="@dimen/small_textsize"
+            tools:text="@string/section_placeholder" />
+
+        <!-- Text with title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_textsize"
+            tools:text="@string/title_placeholder" />
+
+        <!-- Text with contributor name and date  -->
+        <TextView
+            android:id="@+id/contributordate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textSize="@dimen/small_textsize"
+            tools:text="@string/contributor_date" />
+
+    </LinearLayout>
+</LinearLayout>
