@@ -139,7 +139,7 @@ public class NewsActivity extends AppCompatActivity
         Uri baseUri = Uri.parse(NEWS_REQUEST_URL);
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
-        uriBuilder.appendQueryParameter("q", "recycling OR energy OR plasticbags OR energyefficiency OR waste");
+        //uriBuilder.appendQueryParameter("q", "recycling OR energy OR plasticbags OR energyefficiency OR waste");
        // uriBuilder.appendQueryParameter("tag","all");
       uriBuilder.appendQueryParameter("section","environment");
 

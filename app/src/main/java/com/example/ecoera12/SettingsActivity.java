@@ -2,12 +2,12 @@ package com.example.ecoera12;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.ListPreference;
-import android.preference.Preference;
+import androidx.preference.ListPreference;
+import androidx.preference.Preference;
 import android.preference.PreferenceFragment;
-import android.preference.PreferenceManager;
+import androidx.preference.PreferenceManager;
 import androidx.appcompat.app.AppCompatActivity;
-
+import androidx.preference.PreferenceFragmentCompat;
 public class SettingsActivity extends AppCompatActivity {
 
     @Override
@@ -16,11 +16,11 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.settings_activity);
     }
 
-    public static class NewsPreferenceFragment extends PreferenceFragment implements Preference.OnPreferenceChangeListener{
+    public static class NewsAppPreferenceFragment extends PreferenceFragmentCompat implements Preference.OnPreferenceChangeListener{
         @Override
-        public void onCreate(Bundle savedInstanceState) {
+        public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
             super.onCreate(savedInstanceState);
-            addPreferencesFromResource(R.xml.settings_main);
+            setPreferencesFromResource(R.xml.settings_main,rootKey);
 
             Preference fromDate = findPreference(getString(R.string.settings_begin_date_key));
             bindPreferenceSummaryToValue(fromDate);
