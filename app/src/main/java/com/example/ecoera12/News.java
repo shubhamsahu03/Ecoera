@@ -1,6 +1,6 @@
 package com.example.ecoera12;
 
-// Based on ud843-Quake Report - Udemy Android Basics Application
+
 
 /**
  * News
