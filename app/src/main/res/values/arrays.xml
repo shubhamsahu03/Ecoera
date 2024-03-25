@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_order_by_labels">
+        <!-- oldest array date label preference -->
+        <item>@string/settings_order_by_oldest_label</item>
+        <!-- most recent array date label preference -->
+        <item>@string/settings_order_by_most_recent_label</item>
+    </string-array>
+
+    <string-array name="settings_order_by_values">
+        <!--  oldest array date value preference  -->
+        <item>@string/settings_order_by_oldest_value</item>
+        <!-- most recent array date value preference -->
+        <item>@string/settings_order_by_most_recent_value</item>
+    </string-array>
+</resources>
