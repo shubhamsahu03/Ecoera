@@ -1,5 +1,47 @@
+
 <resources>
-    <string name="app_name">EcoEra</string>
-    <string name="historical">HISTORICAL</string>
-    <string name="current">CURRENT</string>
+    <string name="app_name">Ecoera</string>
+
+    <!-- Text to display in the list when there are no news items [CHAR LIMIT=NONE] -->
+    <string name="no_news">No news found.</string>
+
+    <!-- Error message when there is no internet connectivity [CHAR LIMIT=NONE] -->
+    <string name="no_internet_connection">No internet connection.</string>
+
+    <!-- Image description for news item photo -->
+    <string name="image_content">Image for news item</string>
+
+    <!-- Placeholder for title -->
+    <string name="title_placeholder">Place holder for title</string>
+
+    <!-- Section for news item -->
+    <string name="section_placeholder">Placeholder for section</string>
+
+    <!-- Placeholder for image -->
+    <string name="image_description">Placeholder for image</string>
+
+    <!-- Placeholder for contributor and date -->
+    <string name="contributor_date">Placeholder for contributor and date</string>
+
+    <!-- Settings for preferences -->
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">Ecoera Settings</string>
+
+    <!-- Strings for article beginning date Preference [CHAR LIMIT=10] -->
+    <string name="settings_begin_date_label">Specify Article Begin Date (ex.: 2017&#8211;01&#8211;15)</string>
+    <string name="settings_begin_date_key" translatable="false">from-date</string>
+    <string name="settings_begin_date_default" translatable="false">2024-01-01</string>
+
+    <!-- Strings For Order-By Preference -->
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">order-by</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_most_recent_value</string>
+
+    <!-- Label for order-by oldest option "oldest" -->
+    <string name="settings_order_by_oldest_label">Oldest Articles</string>
+    <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
+
+    <!-- Label for order-by most recent option "newest" -->
+    <string name="settings_order_by_most_recent_label">Most Recent Articles</string>
+    <string name="settings_order_by_most_recent_value" translatable="false">newest</string>
 </resources>
